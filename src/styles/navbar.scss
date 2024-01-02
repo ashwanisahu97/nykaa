@@ -1,0 +1,39 @@
+.main-container{
+.navbar-top-strip {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-inline: 50px;
+  height: 40px;
+  background-image: url(https://images-static.naikaa.com/media/wysiwyg/uiTools/2023-12/Top-Strip.jpeg);
+  border: 1px solid blue;
+  .sale-container{
+    & > marquee{
+       
+    }
+    font-size:large;
+    font-weight:500;
+  }
+  .info-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    & > div {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-right: 2px solid black;
+      height: 20px;
+      padding-right: 10px;
+      margin-inline: 5px;
+      & > p {
+        margin-left: 4px;
+      }
+    }
+  }
+}
+.navbar-middle-strip{
+    
+}
+}
