@@ -1,19 +1,20 @@
 import React from "react";
 import "../../styles/navbar.scss";
 import { MdOutlineAppShortcut } from "react-icons/md";
-import { IoBag } from "react-icons/io5";
-import { RiAccountCircleFill } from "react-icons/ri";
 import { IoSearchOutline } from "react-icons/io5";
 import { BsHandbag } from "react-icons/bs";
+import { brands, trendingData } from "../../data/brandData";
 
 const Navbar = () => {
   return (
     <div className="main-container">
       <div className="navbar-top-strip">
         <div className="sale-container">
-          <marquee behavior="" direction="up" scrollmount="1">
-            <p>Pay day sale is live - Up to 50% off in Salary Saving Steals</p>
-          </marquee>
+          <div className="marquee-container">
+            <p className="marquee-content">
+              Pay day sale is live - Up to 50% off in Salary Saving Steals
+            </p>
+          </div>
         </div>
         <div className="info-container">
           <div className="app-icon">
@@ -97,15 +98,10 @@ const Navbar = () => {
             </div>
           </div>
           <div className="account-container">
-            {/* <div className="account-icon">
-              <RiAccountCircleFill />
-            </div>
-            <p>Account</p> */}
             <button className="signin-button">Sign in</button>
           </div>
           <div className="bag-container">
             <div className="bag">
-              {/* <IoBag className="bag-icon"/> */}
               <BsHandbag className="bag-icon" />
               <p></p>
             </div>
@@ -128,9 +124,30 @@ const Navbar = () => {
       </div>
       <section className="body-container">
         <div className="trending-section">
-          <div className="trending-box1"></div>
-          <div className="trending-box2"></div>
-          <div className="trending-box3"></div>
+          {trendingData?.map((element) => (
+            <div className="trending">
+              <img src={element?.image} alt="" />
+            </div>
+          ))}
+        </div>
+        <div className="brand-day-container">
+          <p className="brand-day-title">Brand Of The Day</p>
+          <div className="brand-banner">
+            <img
+              src="https://images-static.nykaa.com/uploads/d18437e6-6e8f-4ad5-84c6-466b1d8e8671.jpg?tr=w-2400,cm-pad_resize"
+              alt=""
+            />
+          </div>
+          <div className="brand-small-banner">
+            {brands?.map((element) => {
+              return (
+                <div className="brand-box">
+                  <img src={element?.image} alt="" />
+                  <p className="brand1-name">{element?.title}</p>
+                </div>
+              );
+            })}
+          </div>
         </div>
       </section>
     </div>
