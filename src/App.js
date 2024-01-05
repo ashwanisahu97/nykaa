@@ -6,7 +6,9 @@ function App() {
   return (
     <div className="App">
       <Navbar></Navbar>
-     <h1>nykaa</h1>
+    <div className="body-container">
+      main body here
+    </div>
     </div>
   );
 }

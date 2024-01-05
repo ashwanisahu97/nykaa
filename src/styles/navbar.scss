@@ -1,39 +1,137 @@
-.main-container{
-.navbar-top-strip {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding-inline: 50px;
-  height: 40px;
-  background-image: url(https://images-static.naikaa.com/media/wysiwyg/uiTools/2023-12/Top-Strip.jpeg);
-  border: 1px solid blue;
-  .sale-container{
-    & > marquee{
-       
-    }
-    font-size:large;
-    font-weight:500;
-  }
-  .info-container {
+.main-container {
+  .navbar-top-strip {
     display: flex;
     justify-content: space-between;
     align-items: center;
-
-    & > div {
+    padding-inline: 50px;
+    height: 40px;
+    background-image: url(https://images-static.naikaa.com/media/wysiwyg/uiTools/2023-12/Top-Strip.jpeg);
+    border: 1px solid blue;
+    .sale-container {
+      & > marquee {
+      }
+      font-size: large;
+      font-weight: 500;
+    }
+    .info-container {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      border-right: 2px solid black;
-      height: 20px;
-      padding-right: 10px;
-      margin-inline: 5px;
-      & > p {
-        margin-left: 4px;
+
+      & > div {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-right: 2px solid black;
+        height: 20px;
+        padding-right: 10px;
+        margin-inline: 5px;
+        & > p {
+          margin-left: 4px;
+        }
       }
     }
   }
-}
-.navbar-middle-strip{
-    
-}
+  .navbar-middle-strip {
+    display: flex;
+    padding-inline: 50px;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 5px;
+    border-bottom: 1px solid darkgrey;
+    .brand-container {
+      display: flex;
+      width: 50%;
+      justify-content: space-between;
+      align-items: center;
+      font-weight: 500;
+      .logo {
+        & > svg {
+          width: 75px;
+          height: 50px;
+        }
+      }
+    }
+    .search-container {
+      display: flex;
+      justify-content: space-between;
+      flex: 1;
+      align-items: center;
+      padding-left: 150px;
+      .search {
+        border:1px solid;
+        .input-container {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          gap: 4px;
+          border-radius: 4px;
+          height: 30px;
+          .search-icon {
+            display: flex;
+            height: 35px;
+            align-items: center;
+            padding: 4px;
+            box-sizing: border-box;
+            border:none;
+          }
+          & > input {
+            width: 200px;
+            height: 26px;
+            border:none;
+            // border:1px solid pink;
+          }
+        }
+      }
+      .account-container {
+        display: flex;
+        justify-content: space-between;
+        gap: 7px;
+        align-items: center;
+        & > .account-icon {
+          margin-top: 2px;
+        }
+        .signin-button {
+          font-weight: 700;
+          border-radius: 5px;
+          border: none;
+          color: white;
+          background-color: #e80071;
+          padding: 10px;
+          padding-inline: 15px;
+        }
+      }
+      .bag-container {
+        //  display: flex;
+        //  justify-content: space-between;
+        //  gap:7px;
+        //  align-items: center;
+        & > .bag {
+          display: flex;
+          align-items: center;
+          & > .bag-icon{
+            font-size:1.5rem;
+          }
+        }
+      }
+    }
+  }
+  .navbar-bottom-strip{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline:60px;
+    color:#aeadb5;
+    border-bottom: 1px solid darkgray;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    & > .offers {
+      background-image: url(https://adn-static1.nykaa.com/media/wysiwyg/HeaderIcons/menusprite.png);
+    }
+  }
+  .body-container {
+    & > .trending-section {
+      height:700px;
+      border:1px solid red;
+    }
+  }
 }
