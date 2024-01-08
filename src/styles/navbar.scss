@@ -40,6 +40,13 @@
         & > p {
           margin-left: 4px;
         }
+        &:hover {
+          color: #ffffff;
+          fill: #ffffff;
+        }
+        & > svg:hover {
+          fill: #ffffff;
+        }
       }
     }
   }
@@ -60,6 +67,12 @@
         & > svg {
           width: 75px;
           height: 50px;
+        }
+      }
+      & > p {
+        &:hover {
+          cursor:pointer;
+          color: #fc2779;
         }
       }
     }
@@ -133,35 +146,12 @@
     & > .offers {
       background-image: url(https://adn-static1.nykaa.com/media/wysiwyg/HeaderIcons/menusprite.png);
     }
-  }
-  .body-container {
-    & > .trending-section {
-      height: 600px;
-      margin-inline: 48px;
-      padding-top: 14px;
-      display: flex;
-      gap: 10px;
-      & > .trending {
-        flex: 1;
-        img {
-          width: 100%;
-        }
-      }
-    }
-
-    & > .brand-day-container {
-      & > .brand-day-title {
-        font-size: 16px;
-        font-weight: 500;
-      }
-      & > .brand-small-banner {
-        display: flex;
-        gap: 5px;
-
-        & > img {
-          width: 100%;
-        }
+    & > p{
+      &:hover{
+        cursor:pointer;
+        color: #fc2779;
       }
     }
   }
+  
 }

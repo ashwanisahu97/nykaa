@@ -1,0 +1,76 @@
+.body-container {
+  & > .trending-section {
+    margin-inline: 48px;
+    padding-top: 14px;
+    display: flex;
+    gap: 10px;
+    margin-bottom: 80px;
+    & > .trending {
+      flex: 1;
+      img {
+        width: 100%;
+        border-radius: 0 0 12px 12px;
+      }
+    }
+  }
+
+  & > .brand-day-container {
+    margin-inline: 48px;
+    & > .brand-day-title {
+      font-size: 26px;
+      font-weight: 500;
+
+      text-align: left;
+    }
+    & > .brand-banner {
+      img {
+        width: 100%;
+        border-radius: 8px;
+      }
+    }
+    & > .brand-small-banner {
+      display: flex;
+      width: 80%;
+      gap: 18px;
+      margin-top: 15px;
+      & > .brand-box {
+        & > img {
+          width: 100%;
+          border-radius: 8px;
+        }
+        & > p {
+          font-size: 24px;
+          font-weight: 600;
+          margin-top: 10px;
+        }
+      }
+    }
+  }
+  & > .top-brands-container {
+    padding-inline: 48px;
+    padding-block:30px;
+    background-color: #f3f4f5;
+    .top-brands-title-container{
+        & > .top-brands-title {
+          font-size: 26px;
+          font-weight: 500;
+          text-align: left;
+        }
+        & > .top-brands-description {
+            text-align: left;
+            font-weight: 400;
+        }
+    }
+    & > .top-brands {
+        display: flex;
+        height: 200px;
+        gap:20px;
+        & > div{
+            flex:1;
+            & > img{
+                width: 100%;
+            }
+        }
+    }
+  }
+}
