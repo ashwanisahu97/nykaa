@@ -43,6 +43,13 @@ const Body = () => {
               <img src={element?.image} />
             </div>
           ))}
+        <div className="arrow-button">
+         <img src="https://images-static.nykaa.com/uploads/45d5a7b6-86eb-4850-9568-4d6ed91731fe.svg" alt="" />
+        </div>
+        </div>
+        <div className="body-bottom-container">
+          <img src="https://images-static.nykaa.com/uploads/38ef7f36-e799-4d44-a638-5943984c323f.jpeg?tr=w-400,cm-pad_resize" alt="" />
+          <img src="https://images-static.nykaa.com/uploads/6e3783aa-6c6b-4a85-9eab-c7aaaa8ebdf0.jpg?tr=w-800,cm-pad_resize" alt="" />
         </div>
       </div>
     </section>
